@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Import Del Css -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Import Del Favicon -->
+        <link rel="shortcut icon" href="media/favicon.webp" type="image/x-icon">
+        <!-- Import Del Font Google Raleway-->
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        <script src="js/sidebar.js"></script>
+        <title>WTravel</title>
+        <meta name="description" content="Questa è una lista dei luoghi da me Visitati. Per ogni località c'è una breve descrizione della sua storia.">
+    </head>
+    <body>
+        <header>
+            <h1>WTravel</h1>
+        </header>
+        <!-- Menu -->
+        <nav>
+            <a id="ToggleSBO" href="javascript:void(0)"  onclick="opSidebar();"><sbo>☰</sbo></a>
+            <a id="ToggleSBC"  href="javascript:void(0)" onclick="clSidebar();"><sbo>✖</sbo></a>
+            <a href="ListaLuoghi.html">Luoghi</a>
+            <a href="index.html"><selected>Home</selected></a>
+            <a href="contact.html">Contatti</a>
+        </nav>
+
+        <div id="Full-Container">  
+            <!--SideBar-->
+            <aside id="left">
+                <div id="sbbs">
+                    <a href="Luoghi/Kingston.html">Kingston</a>
+                    <a href="Luoghi/Tokyo.html">Tokyo</a>
+                    <a href="Luoghi/Mosca.html">Mosca</a>
+                    <a href="Luoghi/Kyoto.html">Kyoto</a>
+                    <a href="Luoghi/Parigi.html">Parigi</a>
+                    <a href="Luoghi/Torino.html">Torino</a>
+                </div>
+            </aside>
+            <!--/SideBar-->
+            <div id="right">  
+                <!--Banner-->          
+                <div class="banner">
+                    <img src="media/bannerHome.webp" alt="Banner Della Home">
+                </div>
+                <!--/Banner-->
+                <!-- Section -->
+                <section>
+                    <h3>Ultimi Luoghi Visitati</h3>
+                    <div class="cards">
+                        <!--Card del Luogo-->
+                        <div class="card">
+                            <a href="Luoghi/Kingston.html">
+                                <img src="media/localita/Kingston/Kingston.webp" alt="Immagine di Kingston">
+                                <p class="ctext">Kingston</p>
+                            </a>
+                        </div>
+                        <!--/Card del Luogo-->
+                        <!--Card del Luogo-->
+                        <div class="card">
+                            <a href="Luoghi/Tokyo.html">
+                                <img src="media/localita/Tokyo/Tokyo.webp" alt="Immagine di Tokyo">
+                                <p class="ctext">Tokyo</p>
+                            </a>
+                        </div>
+                        <!--/Card del Luogo-->
+                        <!--Card del Luogo-->
+                        <div class="card">
+                            <a href="Luoghi/Mosca.html">
+                                <img src="media/localita/Mosca/Mosca.webp" alt="Immagine di Mosca">
+                                <p class="ctext">Mosca</p>
+                            </a>
+                        </div>
+                        <!--/Card del Luogo-->
+                        <a class="btn" href="ListaLuoghi.html">Tutte le Località</a>
+                        <br>
+                    </div>
+                </section>
+                <!-- /Section -->
+            </div>
+            <span class="clear"></span>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="footer-space"> </div>
+            <div class="footer-text"> 
+                <p>Make with <b>&#10084</b> By <b>Andrea Gabriele</b>.</p>
+                <p>Copyright &copy 2020 WertyNetworks - All Rights Reserved.</p>
+                <p>Tel: <a href="tel:+393214321245">+39 321-432-1245</a> Mail: <a href="mailto:admin@wertynetworks.com">admin@wertynetworks.com</a></p>
+            </div>
+        </footer> 
+        <!-- /Footer -->
+    </body>
+</html>

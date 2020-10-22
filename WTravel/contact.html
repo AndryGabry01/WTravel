@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Import Del Css -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Import Del Favicon -->
+        <link rel="shortcut icon" href="media/favicon.webp" type="image/x-icon">
+        <!-- Import Del Font Google Raleway-->
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        <script src="js/contact-form.js"></script>
+        <script src="js/sidebar.js"></script>
+        <title>WTravel</title>
+    </head>
+    <body>
+        <header>
+            <h1>WTravel</h1>
+        </header>
+        <!-- Menu -->
+        <nav>
+            <a id="ToggleSBO" href="javascript:void(0)"  onclick="opSidebar();"><sbo>☰</sbo></a>
+            <a id="ToggleSBC"  href="javascript:void(0)" onclick="clSidebar();"><sbo>✖</sbo></a>
+            <a href="ListaLuoghi.html">Luoghi</a>
+            <a href="index.html">Home</a>
+            <a href="contact.html"><selected>Contatti</selected></a>
+        </nav>
+        <!-- /Menu -->
+        <div id="Full-Container">
+             <!--SideBar-->
+             <aside id="left">
+                <div id="sbbs">
+                    <a href="Luoghi/Kingston.html">Kingston</a>
+                    <a href="Luoghi/Tokyo.html">Tokyo</a>
+                    <a href="Luoghi/Mosca.html">Mosca</a>
+                    <a href="Luoghi/Kyoto.html">Kyoto</a>
+                    <a href="Luoghi/Parigi.html">Parigi</a>
+                    <a href="Luoghi/Torino.html">Torino</a>
+                </div>
+            </aside>
+            <!--/SideBar-->
+            <div id="right">            
+                <div class="container">
+                    <div class="container-center">
+                        <h3>Perchè Contattarci?</h3>
+                        <p>
+                            Salve, questa sezione del sito è dedicata a tutti coloro che volessero mettersi in contatto con noi. <br>
+                            Di seguito troverai un form di contatto dove dovrai inserire le tue informazioni, quali, il tuo nome, il tuo cognome, 
+                            una mail con la quale potremmo ricontattarti, il motivo per cui ci stai contattando ed infine il messaggio che vuoi inviarci.
+                            <br>Tutti i dati verrano trattati secondo le attuali normative sulla privacy.
+                        </p>
+                        <!--Form-->
+                        <h3>Form di contatto</h3>
+                        <form id="contactForm" action="" method="post">
+                            <label for="nome">Nome</label><br>
+                            <input id="nome" name="nome" type="text"><br>
+
+                            <label for="cognome">Cognome</label><br>
+                            <input id="cognome" name="cognome" type="text"><br>
+
+                            <label for="mail">eMail</label><br>
+                            <input id="mail" name="mail" type="text"><br>
+
+                            <label for="motivo">Motivo di Contatto</label><br>
+                            <select name="motivo" id="motivo"><br>
+                                <option hidden value=""></option>
+                                <option value="Aggiungere">Aggiungere Una Località</option>
+                                <option value="Inesattezze">Segnalare Un Inesattezza</option>
+                                <option value="Consigli">Hai Dei Consigli</option>
+                                <option value="Collaborazione">Collaborazione</option>
+                                <option value="Donazione">Donazione</option>
+                                <option value="Altro">Altro</option>
+                            </select><br>
+
+                            <label for="messaggio">Il tuo Messaggio</label><br>
+                            <textarea name="messaggio" id="messaggio" cols="30" rows="10" maxlength="500"></textarea><br>
+
+                            <input type="button" value="Send" onclick="formChecker();">
+                        </form>
+                        <!--/Form-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="footer-space"> </div>
+            <div class="footer-text"> 
+                <p>Make with <b>&#10084</b> By <b>Andrea Gabriele</b>.</p>
+                <p>Copyright &copy 2020 WertyNetworks - All Rights Reserved.</p>
+                <p>Tel: <a href="tel:+393214321245">+39 321-432-1245</a> Mail: <a href="mailto:admin@wertynetworks.com">admin@wertynetworks.com</a></p>
+            </div>
+        </footer> 
+        <!-- /Footer -->
+    </body>
+</html>
